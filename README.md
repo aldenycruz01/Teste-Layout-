@@ -1,6 +1,8 @@
 
 Projeto Desenvolvido no Delphi 10.3 
 
+Banco de dados Postgres versão : postgresql-14.7-1
+
 Desenvolvedor : Aldeny Cruz
 
 
