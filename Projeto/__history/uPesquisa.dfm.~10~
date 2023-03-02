@@ -1,0 +1,366 @@
+object fPesquisa: TfPesquisa
+  Left = 0
+  Top = 0
+  Caption = 'Pesqusiar Contato'
+  ClientHeight = 452
+  ClientWidth = 840
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 840
+    Height = 41
+    Align = alTop
+    Color = 15532031
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = -168
+    ExplicitWidth = 1008
+    object Label1: TLabel
+      Left = 25
+      Top = 15
+      Width = 52
+      Height = 18
+      Caption = 'Nome :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object edtPesquisa: TEdit
+      Left = 83
+      Top = 14
+      Width = 137
+      Height = 21
+      CharCase = ecUpperCase
+      TabOrder = 0
+    end
+    object btnPesquisar: TBitBtn
+      Left = 228
+      Top = 12
+      Width = 25
+      Height = 25
+      Hint = 'Pesquisar Clientes'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFC0C0C08A8A8AB8B8B8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFE4F4F4F4F4F4F8A8A8AFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDCDCDC5353
+        534F4F4F4F4F4FC1C1C1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1EDE0CFC193DA
+        CFACF0ECDEFFFFFFFFFFFF8A8A8A4F4F4F535353FEFEFEFFFFFFFFFFFFFFFFFF
+        FFFFFFEFEADBD7CCA5D0C396DAD0ACE1D9BCDDD4B4E1D9BDE2DCC58F87708A8A
+        8ADCDCDCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFC193CFC193F4F1E7FFFFFFFF
+        FFFFFFFFFFE7E1CADDD4B4E2DCC5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAF9F4
+        D0C396D9CDA8FCFBF9FFFFFFFFFFFFFFFFFFFFFFFFFCFBF8E7E1CAE1DABDFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFEFEBDBCFC193EDE8D6FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFDDD4B4F0ECDEFFFFFFFFFFFFFFFFFFFFFFFFEFEBDB
+        CFC193EFEBDBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE5DEC5DED6
+        B7FFFFFFFFFFFFFFFFFFFFFFFFEFEBDBCFC193EFEBDBFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFE5DEC5DDD4B4FFFFFFFFFFFFFFFFFFFFFFFFF2EEE1
+        CFC193E7E0C8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8F5EEDED5B6F6F2
+        E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFC193D0C396FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFDFDFBDDD4B4E3DBC1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FAF9F4D7CBA4D0C396E7E0C8EFEBDBF2EFE3F3EFE3E4DDC3DDD4B4F4F1E6FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAF9F4CFC193CFC193CFC193D9
+        CEA9DDD4B4DED5B6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFF2EEE1EFEBDBF2EFE3F4F1E6FCFBF7FFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      Layout = blGlyphRight
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      OnClick = btnPesquisarClick
+    end
+    object btnContato: TBitBtn
+      Left = 259
+      Top = 12
+      Width = 133
+      Height = 25
+      Caption = 'Ir Para Cadastro'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000C40E0000C40E00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFF806D5E7B604B7D624D806D5EFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7C614CEC
+        CEB5ECCEB57C614CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFF856346EFCFB2CBAB8E856346FFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8E6342F6
+        D0AED2AC8A8E6342FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        806D5E7C614D8362488A63438E6342D2AC8AD4AB8A9063418E63428762467E62
+        4A826D5EFFFFFFFFFFFFFFFFFFFFFFFF7C614CE6CCB4D3B59CD4B497D5B395D4
+        B294CFAC8BCFA989CCA688C6A487DCBEA37E614CFFFFFFFFFFFFFFFFFFFFFFFF
+        7C614CEED4BCEFD2B7F2D2B5F1CFB2EDCFB2EFCFB2F5CFB1F4CEB0EFCDB0EBCD
+        B27F634BFFFFFFFFFFFFFFFFFFFFFFFF806D5E7A624C8362488A63438A6343ED
+        CFB4EDCFB48C63438C63428563467F634B816F5EFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFF8A6245ECCEB5ECCEB58A6245FFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF836248EA
+        CEB6EACEB6836248FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFF7C614CE8CDB8E8CDB87C614CFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF806D5E7C
+        614C7C614C806D5EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      TabOrder = 2
+      OnClick = btnContatoClick
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 428
+    Width = 840
+    Height = 24
+    Align = alBottom
+    Color = 15532031
+    ParentBackground = False
+    TabOrder = 1
+    ExplicitTop = 41
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 41
+    Width = 840
+    Height = 387
+    Align = alClient
+    DataSource = dsPesquisarContato
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'nome'
+        Title.Caption = 'Nome'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'data_nasc'
+        Title.Caption = 'Data Nasc.'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 70
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'profissao'
+        Title.Alignment = taCenter
+        Title.Caption = 'Profiss'#227'o'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'endereco'
+        Title.Caption = 'Endere'#231'o'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'num_end'
+        Title.Alignment = taCenter
+        Title.Caption = 'Num.'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'cep'
+        Title.Caption = 'Cep'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'bairro'
+        Title.Caption = 'Bairro'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'uf'
+        Title.Caption = 'Estado'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'cidade'
+        Title.Caption = 'Cidade'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'telefone'
+        Title.Caption = 'Telefone'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'celular'
+        Title.Caption = 'Celular'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'email'
+        Title.Caption = 'Email'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'email2'
+        Title.Caption = 'Email Secundario'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end>
+  end
+  object dsPesquisarContato: TDataSource
+    DataSet = fdPesquisarContato
+    Left = 480
+    Top = 96
+  end
+  object fdPesquisarContato: TFDQuery
+    Connection = DM.Conexao
+    SQL.Strings = (
+      'SELECT * FROM contato')
+    Left = 376
+    Top = 96
+    object fdPesquisarContatonome: TWideStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 30
+    end
+    object fdPesquisarContatodata_nasc: TDateField
+      FieldName = 'data_nasc'
+      Origin = 'data_nasc'
+    end
+    object fdPesquisarContatoprofissao: TWideStringField
+      FieldName = 'profissao'
+      Origin = 'profissao'
+      Size = 15
+    end
+    object fdPesquisarContatoendereco: TWideStringField
+      FieldName = 'endereco'
+      Origin = 'endereco'
+      Size = 30
+    end
+    object fdPesquisarContatonum_end: TIntegerField
+      FieldName = 'num_end'
+      Origin = 'num_end'
+    end
+    object fdPesquisarContatocep: TWideStringField
+      FieldName = 'cep'
+      Origin = 'cep'
+      Size = 15
+    end
+    object fdPesquisarContatobairro: TWideStringField
+      FieldName = 'bairro'
+      Origin = 'bairro'
+    end
+    object fdPesquisarContatouf: TWideStringField
+      FieldName = 'uf'
+      Origin = 'uf'
+    end
+    object fdPesquisarContatocidade: TWideStringField
+      FieldName = 'cidade'
+      Origin = 'cidade'
+    end
+    object fdPesquisarContatotelefone: TWideStringField
+      FieldName = 'telefone'
+      Origin = 'telefone'
+    end
+    object fdPesquisarContatocelular: TWideStringField
+      FieldName = 'celular'
+      Origin = 'celular'
+    end
+    object fdPesquisarContatoemail: TWideStringField
+      FieldName = 'email'
+      Origin = 'email'
+    end
+    object fdPesquisarContatoemail2: TWideStringField
+      FieldName = 'email2'
+      Origin = 'email2'
+    end
+  end
+end

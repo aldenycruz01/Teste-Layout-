@@ -1,0 +1,90 @@
+unit uCadastro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,DBCtrls, Vcl.StdCtrls, Vcl.ComCtrls,
+  Vcl.ExtCtrls, Vcl.Buttons, Vcl.Mask;
+
+type
+  TfCadastro = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    edtNome: TEdit;
+    Label2: TLabel;
+    DateTimePicker1: TDateTimePicker;
+    Label3: TLabel;
+    edtProfissao: TEdit;
+    Label4: TLabel;
+    edtEndereco: TEdit;
+    edtNumero: TEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    edtBairro: TEdit;
+    Label7: TLabel;
+    cbEstado: TComboBox;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    edtEmail: TEdit;
+    cbEmail: TCheckBox;
+    edtEmail2: TEdit;
+    Label11: TLabel;
+    btnConfirmarCliente: TBitBtn;
+    BitBtn1: TBitBtn;
+    Panel2: TPanel;
+    msTelefone: TMaskEdit;
+    msCelular: TMaskEdit;
+    cbTelefone: TCheckBox;
+    Label12: TLabel;
+    MaskEdit1: TMaskEdit;
+    procedure cbTelefoneClick(Sender: TObject);
+    procedure cbEmailClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fCadastro: TfCadastro;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfCadastro.cbTelefoneClick(Sender: TObject);
+begin
+ if cbTelefone.Checked then
+ begin
+ msCelular.visible := true;
+ Label9.Visible:=true;
+
+ end
+ else
+ begin
+ msCelular.visible := false;
+ Label9.Visible:= false;
+ end;
+
+end;
+
+procedure TfCadastro.cbEmailClick(Sender: TObject);
+begin
+
+ if cbEmail.Checked then
+ begin
+ Label11.visible := true;
+ edtEmail2.Visible:=true;
+
+ end
+ else
+ begin
+ Label11.Visible:= false;
+ edtEmail2.visible := false;
+ end;
+
+end;
+
+end.

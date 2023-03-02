@@ -1,0 +1,29 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 280
+  Width = 460
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=CDC'
+      'User_Name=postgres'
+      'Password=root'
+      'Server=127.0.0.1'
+      'DriverID=PG')
+    Connected = True
+    LoginPrompt = False
+    Left = 40
+    Top = 48
+  end
+  object FDQuery1: TFDQuery
+    Connection = Conexao
+    SQL.Strings = (
+      'SELECT * FROM contato')
+    Left = 168
+    Top = 104
+  end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    VendorHome = 'C:\Projeto'
+    Left = 168
+    Top = 40
+  end
+end

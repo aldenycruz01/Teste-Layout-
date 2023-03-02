@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/03/01 11:58:39.533,=C:\Users\AXGXPXC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2023/03/01 12:05:39.342,=C:\Users\AXGXPXC\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2023/03/01 13:09:40.356,C:\Projeto\uPrincipal.pas=C:\Users\AXGXPXC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2023/03/01 13:09:40.356,C:\Projeto\uPrincipal.dfm=C:\Users\AXGXPXC\Documents\Embarcadero\Studio\Projects\Unit4.dfm</Transaction>
+    <Transaction>2023/03/01 13:12:15.626,C:\Projeto\uCadastro.pas=C:\Users\AXGXPXC\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2023/03/01 13:12:15.626,C:\Projeto\uCadastro.dfm=C:\Users\AXGXPXC\Documents\Embarcadero\Studio\Projects\Unit5.dfm</Transaction>
+    <Transaction>2023/03/01 13:13:13.354,C:\Projeto\CDC.dproj=C:\Users\AXGXPXC\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2023/03/01 13:42:29.036,=C:\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/03/01 13:46:16.125,C:\Projeto\uPesquisa.pas=C:\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/03/01 13:46:16.125,C:\Projeto\uPesquisa.dfm=C:\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2023/03/01 16:40:54.188,=C:\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/03/01 16:41:26.646,C:\Projeto\uDM.dfm=C:\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2023/03/01 16:41:26.646,C:\Projeto\uDM.pas=C:\Projeto\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

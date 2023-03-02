@@ -1,0 +1,16 @@
+program CDC;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'uPrincipal.pas' {fPrincipal},
+  uCadastro in 'uCadastro.pas' {fCadastro};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfPrincipal, fPrincipal);
+  Application.CreateForm(TfCadastro, fCadastro);
+  Application.Run;
+end.
